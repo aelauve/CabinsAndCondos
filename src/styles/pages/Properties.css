@@ -1,0 +1,76 @@
+@import "../App.css";
+
+.main-properties {
+
+    /* STYLE */
+    background-color: white;
+
+    /* DISPLAY */
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.properties-filter-container {
+
+    /* STYLE */
+    width: 90%;
+    margin-top: 20px;
+
+    /* DISPLAY */
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.property-flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 20px;
+    padding: 0;
+    justify-content: space-evenly;
+}
+
+.filter-container {
+    width: 90%;
+    height: 40px;
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.property-type-filter {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    font-family: 'Poppins';
+    align-items: center;
+}
+
+.location-icon-wrapper {
+    height: 100%;
+    width: auto;
+}
+
+.filter-logo {
+    height: 100%;
+}
+
+.view-type-filter {
+    display: flex;
+    font-family: 'Poppins';
+    align-items: center;
+}
+
+.filter-title {
+    margin: 0 10px 0 0;
+}
+
+.location-title {
+    width: 95%;
+    border-bottom: 1px solid black;
+    margin: 10px 0;
+}
