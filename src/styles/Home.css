@@ -1,0 +1,41 @@
+.homepage-content-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.bg-base {
+    color:white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+
+    transition: 2s ease-in-out;
+}
+
+.img-0 {
+    background-image: url('../images/orange-background.jpg');
+}
+
+.img-1 {
+    background-image: url('../images/plain-smooth-red-wall-texture.jpg');
+}
+
+.img-2 {
+    background-image: url('../images/smooth-blue-concrete-wall.jpg');
+}
+
+.homepage-title {
+    margin:0;
+    width: fit-content;
+    height: 100px;
+    font-size: 75px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 5px 5px 5px grey;
+}
