@@ -1,11 +1,21 @@
+:root {
+    --MOUNTAIN: 89, 94, 33;
+    --SAND: 230, 200, 169;
+    --PAVEMENT: 155, 151, 156;
+    --ROAD: 39, 36, 20;
+    --WATER: 103, 135, 147;
+    --WHITE: 250, 249, 249;
+}
+
 .search-bar {
     /* Parent Styling */
     height: 60px;
     width: 60vw;
     padding: 0 10px;
-    background-color: rgba(255, 255, 255, 0.7);
+    margin-top: 10px;
+    background-color: rgba(VAR(--WHITE), 0.7);
     border-radius: 25px;
-    box-shadow: 5px 5px 5px grey;
+    /* box-shadow: 0px 0px 0px rgba(var(--WHITE), 1); */
 
     /* Parent Positioning */
     /* position: absolute;
@@ -51,22 +61,26 @@
 
 .search-bar-font-style {
     text-align: center;
-    color: grey;
+    color: rgba(var(--ROAD), 1);
 
     font-family: sans-serif;
     font-size: small;
 }
 
 .search-bar-button-container {
-    background-color: #809fff;
+    /* background-color: #809fff; */
+    background-color: rgba(var(--WATER), 0.8);
 }
 
 .search-bar-button-container:hover {
-    background-color: #4d79ff;
+    /* background-color: #4d79ff; */
+    background-color: rgba(var(--WATER), 1);
 }
 
 .search-bar-button {
     background: none;
     border: none;
-    color: white;
+    color: rgba(var(--WHITE), 1);
+    font-family: 'Poppins', 'Arial', sans-serif;
+    font-weight: 700;
 }

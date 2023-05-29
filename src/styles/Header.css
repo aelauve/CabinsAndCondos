@@ -1,0 +1,70 @@
+:root {
+    --MOUNTAIN: 89, 94, 33;
+    --SAND: 230, 200, 169;
+    --PAVEMENT: 155, 151, 156;
+    --ROAD: 39, 36, 20;
+    --WATER: 103, 135, 147;
+    --WHITE: 250, 249, 249;
+}
+
+header {
+    /* background-color: red; */
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header-flex-container {
+    width: 100%;
+    height: 75%;
+    margin-top: 12px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    height: 100%;
+    width: 10%;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.logo {
+    height: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+    align-self: flex-end;
+    margin: 0 15px;
+}
+
+a {
+    color: rgba(var(--WHITE), 1);
+    font-family: 'Poppins', 'Arial', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+a:hover {
+    /* text-shadow: 0px 1px 0px rgba(var(--WHITE), 1); */
+}
+
+.border-container {
+
+    height: 100%;
+    width: 98%;
+    border-bottom: 1px rgba(var(--WHITE), 1) solid;
+
+}
