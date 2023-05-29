@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 import "../../styles/Header.css"
 
 import logo from "../../images/logo-combined.png";
@@ -15,8 +16,8 @@ function Header() {
                 ></img>
             </div>
             <nav>
-                <a href="#">Search</a>
-                <a href="#">Properties</a>
+                <NavLink to="/">Search</NavLink>
+                <NavLink to="/properties">Properties</NavLink>
                 <a href="#">About Us</a>
                 <a href="#">Contact</a>
             </nav>
