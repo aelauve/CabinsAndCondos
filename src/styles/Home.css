@@ -36,25 +36,8 @@
     transition: 2s ease-in-out;
 }
 
-.img-0 {
-    background-image: 
-        linear-gradient(
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)
-        ),
-        url('../images/orange-background.jpg');
-    /* background-image: url('../images/orange-background.jpg'); */
-}
-
-.img-1 {
-    background-image: url('../images/plain-smooth-red-wall-texture.jpg');
-}
-
-.img-2 {
-    background-image: url('../images/smooth-blue-concrete-wall.jpg');
-}
-
 .homepage-title {
+    color: rgba(var(--WHITE), 1);
     margin:0;
     width: fit-content;
     height: 100px;

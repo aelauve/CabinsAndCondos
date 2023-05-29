@@ -2,11 +2,14 @@ import React from 'react'
 import Header from "../components/Header/header.js";
 import "../styles/Properties.css"
 
-import PropertyCard from '../components/PropertyCard/property-card.js';
-import PropertyFilter from '../components/PropertyCard/property-filter.js';
+import PropertyCard from '../components/Properties/PropertyCard/property-card.js';
+import PropertyFilter from '../components/Properties/PropertyFilter/property-filter.js';
 import LocationTitle from '../components/Properties/location-title.js';
 
-import img1 from "../images/beach5.jpeg";
+import westPelican from "../images/beach4.jpeg";
+import allKnotty from "../images/cabin1.jpeg";
+import sunnyDays from "../images/beach3.jpeg";
+import logCabin from "../images/cabin4.jpeg";
 
 function Properties() {
   return (
@@ -15,27 +18,30 @@ function Properties() {
             <Header />
             <section className="main-content">
                 <PropertyFilter />
-                <LocationTitle location="All Locations" />
+                <LocationTitle location="Destin, FL" />
                 <div className="property-flexbox">
                     <PropertyCard 
                     title="West Pelican" 
-                    imgSource={img1}
-                    location="Destin, Florida"
+                    imgSource={westPelican}
+                    price="500"
                     />
                     <PropertyCard 
-                    title="West Pelican" 
-                    imgSource={img1}
-                    location="Destin, Florida"
+                    title="Sunny Days" 
+                    imgSource={sunnyDays}
+                    price="425"
+                    />
+                </div>
+                <LocationTitle location="Gatlinburg, TN" />
+                <div className="property-flexbox">
+                    <PropertyCard 
+                    title="All Knotty" 
+                    imgSource={allKnotty}
+                    price="375"
                     />
                     <PropertyCard 
-                    title="West Pelican" 
-                    imgSource={img1}
-                    location="Destin, Florida"
-                    />
-                    <PropertyCard 
-                    title="West Pelican" 
-                    imgSource={img1}
-                    location="Destin, Florida"
+                    title="Log Cabin" 
+                    imgSource={logCabin}
+                    price="350"
                     />
                 </div>
             </section>
