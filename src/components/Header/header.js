@@ -18,8 +18,8 @@ function Header() {
             <nav>
                 <NavLink to="/">Search</NavLink>
                 <NavLink to="/properties">Properties</NavLink>
-                <a href="#">About Us</a>
-                <a href="#">Contact</a>
+                <a href="/about">About Us</a>
+                <a href="/contact">Contact</a>
             </nav>
         </div>
         <div className="border-container">

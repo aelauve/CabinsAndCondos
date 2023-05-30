@@ -5,6 +5,7 @@ import Home from "./pages/home-search.js";
 import Properties from "./pages/properties";
 import About from "./pages/about";
 import Contact from "./pages/contact";
+import PropertyDetails from "./pages/property-details";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/properties" element={<Properties />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/details" element={<PropertyDetails />} />
         </Routes>
       </Router>
     </React.StrictMode>

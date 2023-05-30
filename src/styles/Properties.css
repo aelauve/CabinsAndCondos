@@ -42,29 +42,47 @@ main {
 }
 
 .filter-container {
-    width: 100%;
-    height: 80px;
+    width: 80%;
+    height: 40px;
     padding: 10px;
 
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-between;
 
     border: 2px solid black;
-    border-radius: 10px;
+    border-radius: 30px;
 }
 
 .property-type-filter {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    font-family: 'Poppins';
+    align-items: center;
+}
 
+.location-icon-wrapper {
+    height: 100%;
+    width: auto;
+}
+
+.filter-logo {
+    height: 100%;
 }
 
 .view-type-filter {
     display: flex;
     font-family: 'Poppins';
+    align-items: center;
+}
+
+.filter-title {
+    margin: 0 10px 0 0;
 }
 
 .location-title {
     width: 95%;
     border-bottom: 1px solid black;
-    margin: 40px 0;
+    margin: 10px 0;
 }
