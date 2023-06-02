@@ -8,10 +8,10 @@ function ViewSelector() {
 
   const options = [
 	{
-		value: "listView",
-		label: "List",
+		value: "gridView",
+		label: "Grid",
 		icon: {listIcon},
-		alt: "List View"
+		alt: "Grid View"
 	},
 	{
 		value: "mapView",

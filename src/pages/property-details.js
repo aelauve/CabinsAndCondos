@@ -17,16 +17,16 @@ function PropertyDetails() {
     <>
         <main>
             <Header></Header>
-            <div className="main-content">
-                <section className="photos-wrapper">
-                    <div className="feature-image-wrapper">
+            <div className="details-main-content">
+                <section className="property-images-display-wrapper">
+                    <div className="featured-property-image-wrapper">
                         <img
                             className="feature-image"
                             src={img2}
                             alt=""
                         />
                     </div>
-                    <div className="addtl-images-wrapper">
+                    <div className="addtl-property-images-wrapper">
                         <div className="addtl-image-wrapper">
                             <img
                                 className="addtl-image"

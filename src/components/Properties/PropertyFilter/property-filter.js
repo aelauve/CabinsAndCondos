@@ -12,14 +12,9 @@ function PropertyFilter() {
   return (
     <div className="filter-container">
         <div className="property-type-filter">
-          <div className="location-icon-wrapper">
-            <img className="filter-logo" src={locationIcon} alt="Location Selection" />
-          </div>
-            {/* <FilterTitle title="Location" /> */}
             <LocationSelector />
         </div>
         <div className="view-type-filter">
-            <FilterTitle title="View" />
             <ViewSelector />
         </div>
     </div>

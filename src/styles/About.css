@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
+
+:root {
+    
+    --MOUNTAIN: 89, 94, 33;
+    --SAND: 230, 200, 169;
+    --PAVEMENT: 155, 151, 156;
+    --ROAD: 39, 36, 20;
+    --WATER: 103, 135, 147;
+    --WHITE: 250, 249, 249;
+
+    --IMAGE-BORDER: 2px solid rgba(var(--WHITE), 1);
+}
+
+main {
+
+    /* STYLE */
+    overflow: scroll;
+    font-family: 'Poppins', 'Ariel', sans-serif;
+}
+
+.about-main-content {
+
+    /* STYLE */
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+
+    /* DISPLAY */
+    display: flex;
+}
+
+.image-collage-wrapper {
+
+    /* STYLE */
+    width: 35%;
+    height: 100%;
+
+    /* DISPLAY */
+    display: flex;
+    flex-direction: column;
+}
+
+.image-collage-wrapper img {
+    border: 1px solid white;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.about-featured-image-container {
+
+    /* STYLE */
+    height: 50%;
+
+    /* temp */
+    background-color: rgba(var(--MOUNTAIN), 1);
+}
+
+.featured-image-wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+.about-addtl-image-container {
+
+    /* STYLE */
+    height: 50%;
+
+    /* temp */
+    background-color: rgba(var(--WATER), 1);
+}
+
+.addtl-image-horizontal-flex {
+
+    /* STYLE */
+    height: 100%;
+    width: 100%;
+
+    /* DISPLAY */
+    display: flex;
+}
+
+.addtl-image-vertical-flex {
+
+    /* STYLE */
+    height: 100%;
+    width: 50%;
+
+    /* DISPLAY */
+    display: flex;
+    flex-direction: column;
+}
+
+.addtl-image-horizontal-wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+.addtl-image-vert-wrapper {
+    height: 50%;
+    width: 100%;
+}
+
+.about-content-wrapper {
+
+    /* STYLE */
+    width: 55%;
+    padding: 80px 20px 20px;
+}
+
+.about-content-wrapper h1 {
+
+    /* STYLE */
+    color: rgba(var(--WATER), 1);
+    font-size: xx-large;
+}

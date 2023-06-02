@@ -18,29 +18,31 @@ function Properties() {
             <Header />
             <section className="main-content">
                 <PropertyFilter />
-                <LocationTitle location="Destin, FL" />
                 <div className="property-flexbox">
                     <PropertyCard 
                     title="West Pelican" 
                     imgSource={westPelican}
+                    location="Destin, FL"
                     price="500"
                     />
                     <PropertyCard 
                     title="Sunny Days" 
                     imgSource={sunnyDays}
+                    location="Destin, FL"
                     price="425"
                     />
                 </div>
-                <LocationTitle location="Gatlinburg, TN" />
                 <div className="property-flexbox">
                     <PropertyCard 
                     title="All Knotty" 
                     imgSource={allKnotty}
+                    location="Gatlinburg, TN"
                     price="375"
                     />
                     <PropertyCard 
                     title="Log Cabin" 
                     imgSource={logCabin}
+                    location="Gatlinburg, TN"
                     price="350"
                     />
                 </div>

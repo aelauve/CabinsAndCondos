@@ -5,7 +5,7 @@ import GuestTag from '../PropertyTags/guest-tag.js'
 import BedroomTag from '../PropertyTags/bedroom-tag'
 import BathroomTag from '../PropertyTags/bathroom-tag'
 
-function PropertyCard({ title, imgSource, price }) {
+function PropertyCard({ title, imgSource, location, price }) {
   return (
     <div className="card-container">
         <div className="image-container">
@@ -13,9 +13,13 @@ function PropertyCard({ title, imgSource, price }) {
         </div>
         <div className="details-container">
             <div className="text-container">
-                <h1>{title}</h1>
+                <div className="titles-container">
+                    <h1>{title}</h1>
+                    <h2>{location}</h2>
+                </div>
+                
                 <div className="pricing-container">
-                    <h1 className="price-h1">${price}</h1>
+                    <h1>${price}</h1>
                     <h2> / night</h2>
                 </div>
             </div>
