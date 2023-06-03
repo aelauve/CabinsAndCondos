@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../styles/Home.css";
+import "../styles/pages/HomeSearch.css";
 
 import img1 from "../images/beach3.jpeg";
 import img2 from "../images/cabin1.jpeg";
@@ -26,7 +26,20 @@ function Homepage() {
   });
 
   return (
-    <div 
+    <>
+      <main
+        className=""
+        style={{backgroundImage: `url(${imgs[index]}`}}>
+        
+        <div className="homepage-content-container">
+            <h1 className="homepage-title"> Explore with us. Relax with us. </h1>
+            <SearchBar />
+        </div>
+
+      </main>
+
+{/*       
+      <div 
         className="bg-base" 
         style={{ 
             backgroundImage: 
@@ -37,7 +50,8 @@ function Homepage() {
             <h1 className="homepage-title"> Explore with us. Relax with us. </h1>
             <SearchBar />
         </div>
-    </div>
+    </div> */}
+    </>
   );
 }
 

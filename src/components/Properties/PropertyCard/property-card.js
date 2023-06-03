@@ -1,9 +1,9 @@
 import React from 'react'
 import "../../../styles/PropertyCard.css"
 
-import GuestTag from '../PropertyTags/guest-tag.js'
-import BedroomTag from '../PropertyTags/bedroom-tag'
-import BathroomTag from '../PropertyTags/bathroom-tag'
+import GuestTag from '../../Tags/PropertyTags/guest-tag.js'
+import BedroomTag from '../../Tags/PropertyTags/bedroom-tag'
+import BathroomTag from '../../Tags/PropertyTags/bathroom-tag'
 
 function PropertyCard({ title, imgSource, location, price }) {
   return (
@@ -14,7 +14,7 @@ function PropertyCard({ title, imgSource, location, price }) {
         <div className="details-container">
             <div className="text-container">
                 <div className="titles-container">
-                    <h1>{title}</h1>
+                    <a href="/details"><h1>{title}</h1></a>
                     <h2>{location}</h2>
                 </div>
                 
@@ -23,7 +23,7 @@ function PropertyCard({ title, imgSource, location, price }) {
                     <h2> / night</h2>
                 </div>
             </div>
-            <div className="tags-container">
+            <div className="property-tags-container">
                 <GuestTag
                 numGuests="6"
                 />
@@ -35,10 +35,6 @@ function PropertyCard({ title, imgSource, location, price }) {
                 />
             </div>
         </div>
-        {/* <div className="button-container">
-            <DetailsButton label="Details"/>
-            <DetailsButton label="Book Now"/>
-        </div> */}
     </div>
   )
 }

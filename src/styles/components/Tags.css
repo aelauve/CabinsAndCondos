@@ -1,0 +1,42 @@
+@import "../App.css";
+
+/*---------------*/
+/* GLOBAL STYLES */
+/*---------------*/
+
+.tag {
+
+    /* STYLE */
+    border-radius: var(--BORDER-RADIUS-25);
+
+    /* DISPLAYS */
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.tag-image-container {
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.tag-image-container img {
+    width: 80%;
+    height: auto;
+}
+
+/*---------------------*/
+/* PROPERTY TAG STYLES */
+/*---------------------*/
+
+.property-card-tag {
+
+    /* STYLE */
+    width: 15%;
+    height: 20px;
+    border: 1px solid rgba(var(--PAVEMENT), 1);
+    font-size: x-small;
+}

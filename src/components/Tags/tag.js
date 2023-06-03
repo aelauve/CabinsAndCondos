@@ -1,8 +1,9 @@
 import React from 'react'
+import "../../styles/components/Tags.css"
 
-function PropertyTag({ iconSrc, iconAlt, tagText }) {
+function Tag({ iconSrc, iconAlt, tagText, className }) {
   return (
-    <div className="property-tag">
+    <div className={`tag ${className}`}>
         <div className="tag-image-container">
             <img src={iconSrc} alt={iconAlt} />
         </div>
@@ -11,4 +12,4 @@ function PropertyTag({ iconSrc, iconAlt, tagText }) {
   )
 }
 
-export default PropertyTag
+export default Tag

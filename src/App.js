@@ -6,11 +6,13 @@ import Properties from "./pages/properties";
 import About from "./pages/about";
 import Contact from "./pages/contact";
 import PropertyDetails from "./pages/property-details";
+import Header from "./components/Header/header";
 
 function App() {
   return (
     <React.StrictMode>
       <Router>
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/properties" element={<Properties />} />

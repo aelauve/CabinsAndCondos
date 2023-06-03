@@ -9,7 +9,7 @@
 
 header {
     background-color: rgba(var(--WATER), 0.7);
-    position: absolute;
+    /* position: absolute; */
     top: 0;
     width: 100%;
     height: 100px;
