@@ -1,7 +1,7 @@
 import React from "react";
-import "../../styles/SearchBar.css"
+import "../../styles/components/SearchBar.css"
 
-function SearchFieldSelect() {
+function InputFieldSelect() {
   return (
     <div className="search-field">
       <select name="cars" id="cars" className="search-field-select search-bar-font-style">
@@ -13,4 +13,4 @@ function SearchFieldSelect() {
   )
 }
 
-export default SearchFieldSelect;
+export default InputFieldSelect;

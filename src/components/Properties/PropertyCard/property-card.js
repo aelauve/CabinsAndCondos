@@ -1,13 +1,15 @@
 import React from 'react'
-import "../../../styles/PropertyCard.css"
+import "../../../styles/components/PropertyCard.css"
 
 import GuestTag from '../../Tags/PropertyTags/guest-tag.js'
 import BedroomTag from '../../Tags/PropertyTags/bedroom-tag'
 import BathroomTag from '../../Tags/PropertyTags/bathroom-tag'
 
-function PropertyCard({ title, imgSource, location, price }) {
+function PropertyCard({ title, imgSource, location, price, bgColor }) {
   return (
-    <div className="card-container">
+    <div 
+        className="card-container"
+        style={{backgroundColor: {bgColor}}}>
         <div className="image-container">
             <img src={imgSource} alt="Property Image" />
         </div>

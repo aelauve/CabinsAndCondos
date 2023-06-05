@@ -1,5 +1,5 @@
 import React from 'react'
-import "../../../styles/PropertyCard.css"
+import "../../../styles/components/PropertyCard.css"
 
 import PropertyTag from './property-tag'
 import guest from "../../../images/icons/guest.png"

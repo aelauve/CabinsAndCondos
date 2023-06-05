@@ -9,7 +9,6 @@ import img5 from "../images/beach5.jpeg";
 import img6 from "../images/cabin3.jpeg";
 
 import SearchBar from "../components/SearchBar/search-bar.js";
-import Header from "../components/Header/header.js";
 
 const imgs = [img1, img2, img3, img4, img5, img6];
 
@@ -28,12 +27,15 @@ function Homepage() {
   return (
     <>
       <main
-        className=""
+        className="main-home"
         style={{backgroundImage: `url(${imgs[index]}`}}>
         
         <div className="homepage-content-container">
             <h1 className="homepage-title"> Explore with us. Relax with us. </h1>
-            <SearchBar />
+            <SearchBar 
+              withButton={true}
+              searchBarStyle="search-bar-home"
+            />
         </div>
 
       </main>

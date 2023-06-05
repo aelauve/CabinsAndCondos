@@ -1,0 +1,68 @@
+@import "../App.css";
+
+.main-contact {
+
+    /* STYLE */
+    width: 100%;
+    height: 100%;
+    background: url('../../images/cabin1.jpeg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+.form-container {
+
+    /* STYLE */
+    width: 50%;
+    height: fit-content;
+    border-radius: var(--BORDER-RADIUS-10);
+    /* box-shadow: 0 0 40px rgba(var(--ROAD), 1); */
+    background-color: rgba(var(--WATER), 1);
+
+    /* DISPLAY */
+    margin: 100px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container h1 {
+
+    /* STYLE */
+    color: rgba(var(--WHITE), 1);
+
+    /* DISPLAY */
+    text-align: center;
+    /* margin: 20px 0; */
+
+}
+
+.contact-input-container {
+
+    /* STYLE */
+    width: 80%;
+    height: 75%;
+
+    /* DISPLAY */
+    margin: 0;
+}
+
+.contact-input-fields-container {
+
+    /* STYLE */
+    width: 100%;
+    height: 30px;
+    margin: 20px auto;
+    
+    /* DISPLAY */
+    display: flex;
+    justify-content: center;
+}
+
+.contact-details-container {
+    
+}

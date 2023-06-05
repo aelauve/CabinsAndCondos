@@ -1,6 +1,6 @@
 @import "../App.css";
 
-main {
+.main-home {
     color: rgba(var(--WHITE), 1);
     display: flex;
     justify-content: center;

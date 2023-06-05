@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../components/Header/header'
-import SearchFieldSelect from "../components/SearchBar/search-field-select";
-import SearchFieldDate from "../components/SearchBar/search-field-date";
+import InputFieldSelect from "../components/SearchBar/input-field-select";
+import InputFieldDate from "../components/SearchBar/input-field-date";
 import "../styles/PropertyDetails.css"
 
 import img1 from "../images/cabin3.jpeg"
@@ -101,8 +101,8 @@ function PropertyDetails() {
                             </div>
                         </div>
                         <div className="booking-details-wrapper">
-                            <SearchFieldSelect />
-                            <SearchFieldDate />
+                            <InputFieldSelect />
+                            <InputFieldDate />
                         </div>
                     </div>
                 </section>

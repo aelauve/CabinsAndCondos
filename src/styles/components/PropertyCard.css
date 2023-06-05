@@ -1,21 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
-
-:root {
-    
-    --MOUNTAIN: 89, 94, 33;
-    --SAND: 230, 200, 169;
-    --PAVEMENT: 155, 151, 156;
-    --ROAD: 39, 36, 20;
-    --WATER: 103, 135, 147;
-    --WHITE: 250, 249, 249;
-}
+@import "../App.css";
 
 .card-container {
 
     /* STYLE */
     width: 40%;
     padding: 30px 10px;
-    border-radius: 10px;
+    border-radius: var(--BORDER-RADIUS-10);
     font-family: 'Poppins', 'Ariel', sans-serif;
 
     /* DISPLAY */

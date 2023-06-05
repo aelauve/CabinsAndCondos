@@ -11,11 +11,15 @@
 }
 
 .switch-field {
-    font-family: "Poppins", "Arial", sans-serif;
-    background-color: #e4e4e4;
-    border-radius: var(--BORDER-RADIUS);
-    display: flex;
-    align-items: center;
+
+  /* STYLE */
+  background-color: #e4e4e4;
+  border-radius: var(--BORDER-RADIUS);
+  height: fit-content;
+
+  /* DISPLAY */
+  display: flex;
+  align-items: center;
 }
   
   .switch-field input {

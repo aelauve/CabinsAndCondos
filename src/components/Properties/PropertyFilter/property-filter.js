@@ -1,5 +1,5 @@
 import React from 'react'
-import "../../../styles/Properties.css"
+import "../../../styles/pages/Properties.css"
 
 import FilterTitle from './filter-title'
 import ViewSelector from './SelectionToggle/view-selector';

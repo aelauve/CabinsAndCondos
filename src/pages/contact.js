@@ -1,18 +1,18 @@
 import React from 'react'
-import Header from '../components/Header/header'
 import InputFieldText from '../components/SearchBar/input-field-text';
-import "../styles/Contact.css"
+import "../styles/pages/Contact.css"
+import "../styles/components/Inputs.css"
+
+import SubmitButton from '../components/Buttons/submit-button';
 
 function Contact() {
   return (
-    <>
-        <main>
-            <Header />
+        <main className="main-contact">
             <div className="contact-main-content">
 
               <div className="form-container">
 
-                <h1>Get in Touch!</h1>
+                <h1>Let's get in touch!</h1>
 
                 <div className="contact-input-container">
 
@@ -29,6 +29,7 @@ function Contact() {
                 </div>
 
                 <textarea 
+                    className="contact-inputs"
                     id="contact-message" 
                     name="contact-message" 
                     rows="6" 
@@ -37,7 +38,7 @@ function Contact() {
 
                 </textarea>
 
-                <button>Submit</button>
+                <SubmitButton />
 
                 <div className="contact-details-container">
 
@@ -47,7 +48,6 @@ function Contact() {
 
             </div>
         </main>
-    </>
   )
 }
 

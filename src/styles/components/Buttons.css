@@ -1,0 +1,40 @@
+@import "../App.css";
+
+.base-button-style {
+
+    /* STYLE */
+    background: none;
+    border: none;
+    font-weight: 700;
+}
+
+.submit-button {
+
+    /* STYLE */
+    width: 30%;
+    height: 40px;
+    color: rgba(var(--WATER), 1);
+    font-size: large;
+    background-color: rgba(var(--WHITE), 0.8);
+    border-radius: VAR(--BORDER-RADIUS-25);
+
+    /* POSITION */
+    margin-top: 10px;
+}
+
+.submit-button:hover {
+    background-color: rgba(var(--WHITE), 1);
+}
+
+.search-button {
+
+    /* STYLE */
+    color: rgba(var(--WHITE), 1);
+    /* font-weight: 700; */
+
+    background-color: rgba(var(--WATER), 0.8);
+}
+
+.search-button:hover {
+    background-color: rgba(var(--WATER), 1);
+}

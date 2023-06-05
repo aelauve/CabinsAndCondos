@@ -1,7 +1,7 @@
 import React from "react";
-import "../../styles/SearchBar.css"
+import "../../styles/components/SearchBar.css"
 
-function SearchFieldDate({ fieldText }) {
+function InputFieldDate({ fieldText }) {
   return (
     <div className="search-field">
       <div className="search-field-text search-bar-font-style">
@@ -11,4 +11,4 @@ function SearchFieldDate({ fieldText }) {
   )
 }
 
-export default SearchFieldDate;
+export default InputFieldDate;

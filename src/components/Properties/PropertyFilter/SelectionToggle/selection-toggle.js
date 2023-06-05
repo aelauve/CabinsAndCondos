@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import "../../../../styles/SelectionToggle.css"
+import "../../../../styles/components/SelectionToggle.css"
 
 function SelectionToggle({ options }) {
 

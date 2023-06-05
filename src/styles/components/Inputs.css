@@ -1,0 +1,38 @@
+@import "../App.css";
+
+.contact-inputs {
+
+    /* STYLE */
+    color: white;
+    font-size: medium;
+    border: 1px solid rgba(var(--WHITE), 1);
+    border-radius: var(--BORDER-RADIUS-10);
+    background: none;
+}
+
+#input-field-text {
+
+    /* STYLE */
+    width: 100%;
+    height: 100%;
+
+    /* DISPLAY */
+    margin: 0 10px;
+    padding: 5px;
+}
+
+#input-field-text::placeholder,
+#contact-message::placeholder {
+    color: white;
+}
+
+#contact-message {
+
+    /* STYLE */
+    width: 80%;
+    font-family: 'Ariel', sans-serif;
+
+    /* DISPLAY */
+    overflow: scroll;
+    padding: 10px;
+}

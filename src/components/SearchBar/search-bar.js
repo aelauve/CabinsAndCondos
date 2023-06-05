@@ -1,9 +1,9 @@
 import React from "react";
-import "../../styles/SearchBar.css"
+import "../../styles/components/SearchBar.css"
 
-import SearchFieldDate from "./search-field-date.js";
-import SearchFieldSelect from "./search-field-select.js";
-import SearchBarButton from "./search-bar-button.js";
+import InputFieldDate from "./input-field-date.js";
+import InputFieldSelect from "./input-field-select.js";
+import SearchButton from "../Buttons/search-button.js";
 
 const locationDropdown = {
     labels: [],
@@ -15,16 +15,29 @@ const guestDropdown = {
     values: []
 }
 
-function SearchBar() {
-  return (
-    <div className='search-bar'>
-        <SearchFieldSelect />
-        <SearchFieldDate fieldText="Check-In"/>
-        <SearchFieldDate fieldText="Check-Out"/>
-        <SearchFieldSelect />
-        <SearchBarButton buttonLabel="Search"/>
-    </div>
-  );
+function SearchBar({ withButton, searchBarStyle, searchFieldStyle }) {
+
+  let component = "";
+  if (withButton) {
+    return (
+      <div className={`search-bar ${searchBarStyle}`}>
+        <InputFieldSelect />
+        <InputFieldDate fieldText="Check-In"/>
+        <InputFieldDate fieldText="Check-Out"/>
+        <InputFieldSelect />
+        <SearchButton buttonLabel="Search"/>
+      </div>
+    );
+  } else {
+    return (
+      <div className={`search-bar ${searchBarStyle}`}>
+        <InputFieldSelect />
+        <InputFieldDate fieldText="Check-In"/>
+        <InputFieldDate fieldText="Check-Out"/>
+        <InputFieldSelect />
+      </div>
+    );
+  }
 }
 
 export default SearchBar;

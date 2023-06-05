@@ -1,0 +1,62 @@
+@import "../App.css";
+
+.search-bar {
+    /* STYLE */
+    padding: 0 10px;
+    margin-top: 10px;
+    border-radius: var(--BORDER-RADIUS-30);
+
+    /* DISPLAY */
+    display: flex;
+}
+
+.search-bar-home {
+    background-color: rgba(VAR(--WHITE), 0.7);
+    width: 60vw;
+    height: 60px;
+}
+
+.search-bar-properties {
+    background-color: #e4e4e4;
+    width: 60%;
+    height: 50px;
+}
+
+.search-field {
+    
+    /* Parent Styling */
+    background-color: white;
+    height: 60%;
+    width: 18%;
+    margin: auto;
+    border-radius: 25px;
+
+    /* Child Positioning */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.search-field-select {
+    border: none;
+    outline: 0;
+    margin: 5px 10px;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    text-align: center;
+}
+
+
+.search-field-text {
+    width: fit-content;
+}
+
+.search-bar-font-style {
+    text-align: center;
+    color: rgba(var(--ROAD), 1);
+
+    font-family: sans-serif;
+    font-size: small;
+}

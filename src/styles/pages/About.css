@@ -1,30 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
+@import "../App.css";
 
-:root {
-    
-    --MOUNTAIN: 89, 94, 33;
-    --SAND: 230, 200, 169;
-    --PAVEMENT: 155, 151, 156;
-    --ROAD: 39, 36, 20;
-    --WATER: 103, 135, 147;
-    --WHITE: 250, 249, 249;
-
-    --IMAGE-BORDER: 2px solid rgba(var(--WHITE), 1);
-}
-
-main {
-
-    /* STYLE */
-    overflow: scroll;
-    font-family: 'Poppins', 'Ariel', sans-serif;
-}
-
-.about-main-content {
+.main-about {
 
     /* STYLE */
     width: 100%;
     height: 100%;
-    margin-top: 100px;
 
     /* DISPLAY */
     display: flex;
