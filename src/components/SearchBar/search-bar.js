@@ -13,6 +13,12 @@ function SearchBar({ withButton, searchBarStyle, searchFieldStyle }) {
     "Fort Walton Beach, FL": "Fort Walton Beach, FL"
   }
 
+  const locationSelect = document.getElementById("location");
+  for (let i = 0; i < locationOptions.length; i++) {
+    let index = locationOptions[i];
+    locationSelect.options[locationSelect.options.length] = new Option(locationOptions[index], index);
+  }
+
   const guestOptions = {
     1: "1 Guest",
     2: "2 Guest",
@@ -22,6 +28,12 @@ function SearchBar({ withButton, searchBarStyle, searchFieldStyle }) {
     6: "6 Guest",
     7: "7 Guest",
     8: "8 Guest"
+  }
+
+  const guestSelect = document.getElementById("guests");
+  for (let i = 0; i < guestOptions.length; i++) {
+    let index = guestOptions[i];
+    guestSelect.options[guestSelect.options.length] = new Option(guestOptions[index], index);
   }
 
   if (withButton) {

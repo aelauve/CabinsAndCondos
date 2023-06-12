@@ -1,10 +1,14 @@
 import React from "react";
+import { useNavigate } from 'react-router-dom';
 import "../../styles/components/SearchBar.css"
 
 function SearchButton() {
 
+  const navigate = useNavigate();
+
   function handleSearch() {
     console.log("Searching!");
+    navigate(`/properties`);
   }
 
   return (
