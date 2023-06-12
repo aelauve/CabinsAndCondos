@@ -11,8 +11,9 @@ function SearchBar({ withButton, searchBarStyle, searchFieldStyle }) {
     return (
       <div className={`search-bar ${searchBarStyle}`}>
         <InputFieldSelect />
-        <InputFieldDate fieldText="Check-In"/>
-        <InputFieldDate fieldText="Check-Out"/>
+        <TableDatePicker />
+        {/* <InputFieldDate fieldText="Check-In"/>
+        <InputFieldDate fieldText="Check-Out"/> */}
         <InputFieldSelect />
         <SearchButton buttonLabel="Search"/>
       </div>

@@ -8,22 +8,27 @@ export default function TableDatePicker() {
  const [endDate, setEndDate] = useState(new Date());
 
  return (
-    <div>
+    <div className="search-field">
+    <div className="search-field-text search-bar-font-style">
         <DatePicker
-            selected={startDate}
-            selectsStart
-            startDate={startDate}
-            endDate={endDate}
-            onChange={date => setStartDate(date)}
-        />
+                selected={startDate}
+                selectsStart
+                startDate={startDate}
+                endDate={endDate}
+                onChange={date => setStartDate(date)}
+            />
+    </div>
+
+    <div className="search-field-text search-bar-font-style">
         <DatePicker
-            selected={endDate}
-            selectsEnd
-            startDate={startDate}
-            endDate={endDate}
-            minDate={startDate}
-            onChange={date => setEndDate(date)}
-        />
+                selected={endDate}
+                selectsEnd
+                startDate={startDate}
+                endDate={endDate}
+                minDate={startDate}
+                onChange={date => setEndDate(date)}
+            />
+    </div>
   </div>
  );
 }
