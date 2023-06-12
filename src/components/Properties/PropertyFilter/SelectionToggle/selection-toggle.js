@@ -3,7 +3,7 @@ import "../../../../styles/components/SelectionToggle.css"
 
 function SelectionToggle({ options }) {
 
-    const [formInputs, setFormInputs] = useState(options)
+    const [formInputs] = useState(options)
 
     const state = {
       toggle: false
