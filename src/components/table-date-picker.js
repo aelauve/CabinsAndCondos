@@ -10,19 +10,20 @@ export default function TableDatePicker() {
  return (
     <>
         <div className="search-field">
-            <div className="search-field-text search-bar-font-style">
+            {/* <div className="search-field-text search-bar-font-style"> */}
                 <DatePicker
                     selected={startDate}
                     selectsStart
                     startDate={startDate}
                     endDate={endDate}
                     onChange={date => setStartDate(date)}
+                    className="search-field-text search-bar-font-style"
                 />
-            </div>
+            {/* </div> */}
         </div>
 
         <div className="search-field">
-            <div className="search-field-text search-bar-font-style">
+            {/* <div className="search-field-text search-bar-font-style"> */}
                 <DatePicker
                     selected={endDate}
                     selectsEnd
@@ -30,8 +31,9 @@ export default function TableDatePicker() {
                     endDate={endDate}
                     minDate={startDate}
                     onChange={date => setEndDate(date)}
+                    className="search-field-text search-bar-font-style"
                 />
-            </div>
+            {/* </div> */}
         </div>
     </>
  );
