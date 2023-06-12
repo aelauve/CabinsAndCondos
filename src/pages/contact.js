@@ -9,7 +9,7 @@ function Contact() {
   return (
         <main className="main-contact">
             <div className="contact-main-content">
-            <form action="https://formsubmit.co/504alexise@gmail.com" method="POST" id="contact-form">
+            <form action="https://formsubmit.co/3b882609edad2753db5e9a6241ce1544" method="POST" id="contact-form">
               <div className="form-container">
 
                 <h1>Let's get in touch!</h1>
