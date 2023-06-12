@@ -2,6 +2,7 @@ import React from "react";
 import "../../styles/components/SearchBar.css"
 
 import InputFieldDate from "./input-field-date.js";
+import TableDatePicker from "../table-date-picker";
 import InputFieldSelect from "./input-field-select.js";
 import SearchButton from "../Buttons/search-button.js";
 
