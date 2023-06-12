@@ -9,7 +9,7 @@ function Contact() {
   return (
         <main className="main-contact">
             <div className="contact-main-content">
-
+            <form action="https://formsubmit.co/504alexise@gmail.com" method="POST" id="contact-form">
               <div className="form-container">
 
                 <h1>Let's get in touch!</h1>
@@ -45,7 +45,7 @@ function Contact() {
                 </div>
 
               </div>
-
+            </form>
             </div>
         </main>
   )

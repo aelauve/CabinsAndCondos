@@ -1,14 +1,14 @@
 import React from "react";
 import "../../styles/components/Inputs.css"
 
-function InputFieldText({ label }) {
+function InputFieldText({ label, }) {
   return (
     <>
       <input
         type="text"
         className="contact-inputs"
         id="input-field-text"
-        name="name-input"
+        name={label}
         placeholder={label}
         required>
       </input>
