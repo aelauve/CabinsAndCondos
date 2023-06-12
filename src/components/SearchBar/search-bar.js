@@ -5,19 +5,8 @@ import InputFieldDate from "./input-field-date.js";
 import InputFieldSelect from "./input-field-select.js";
 import SearchButton from "../Buttons/search-button.js";
 
-const locationDropdown = {
-    labels: [],
-    values: []
-}
-
-const guestDropdown = {
-    labels: [],
-    values: []
-}
-
 function SearchBar({ withButton, searchBarStyle, searchFieldStyle }) {
 
-  let component = "";
   if (withButton) {
     return (
       <div className={`search-bar ${searchBarStyle}`}>

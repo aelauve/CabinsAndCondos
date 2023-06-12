@@ -5,22 +5,6 @@ function SelectionToggle({ options }) {
 
     const [formInputs, setFormInputs] = useState(options)
 
-    let handleChange = (i, e) => {
-        let newFormValues = [...formInputs];
-        newFormValues[i][e.target.name] = e.target.value;
-        setFormInputs(newFormValues);
-      }
-    
-    let addFormFields = () => {
-        setFormInputs([...formInputs, { name: "", email: "" }])
-      }
-    
-    let removeFormFields = (i) => {
-        let newFormValues = [...formInputs];
-        newFormValues.splice(i, 1);
-        setFormInputs(newFormValues)
-    }
-
     const state = {
       toggle: false
     };

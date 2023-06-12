@@ -11,7 +11,7 @@ function PropertyCard({ title, imgSource, location, price, bgColor }) {
         className="card-container"
         style={{backgroundColor: {bgColor}}}>
         <div className="image-container">
-            <img src={imgSource} alt="Property Image" />
+            <img src={imgSource} alt="Property" />
         </div>
         <div className="details-container">
             <div className="text-container">

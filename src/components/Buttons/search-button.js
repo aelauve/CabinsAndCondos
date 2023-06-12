@@ -1,7 +1,7 @@
 import React from "react";
 import "../../styles/components/SearchBar.css"
 
-function SearchButton({ }) {
+function SearchButton() {
   return (
         <button 
           className="search-bar-font-style search-field base-button-style search-button"
