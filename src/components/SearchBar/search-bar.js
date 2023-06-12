@@ -31,9 +31,14 @@ function SearchBar({ withButton, searchBarStyle, searchFieldStyle }) {
   }
 
   const guestSelect = document.getElementById("guests");
-  for (let i = 0; i < guestOptions.length; i++) {
-    let index = guestOptions[i];
-    guestSelect.options[guestSelect.options.length] = new Option(guestOptions[index], index);
+  for (let key in guestSelect) {
+    let option = document.createElement("option");
+    option.setAttribute('value', guestOptions[key]);
+
+    let optionText = document.createTextNode(key);
+    option.appendChild(optionText);
+
+    guestSelect.appendChild(option);
   }
 
   if (withButton) {
