@@ -4,7 +4,8 @@ import "../../styles/components/SearchBar.css"
 function InputFieldSelect({ name, selectOptions }) {
 
   const select = document.getElementById({name});
-  for (index in selectOptions) {
+  for (i = 0; i < selectOptions.length; i++) {
+    let index = selectOptions[i];
     select.options[select.options.length] = new Option(selectOptions[index], index);
   }
 
