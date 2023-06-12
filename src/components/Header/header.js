@@ -16,10 +16,10 @@ function Header() {
                 ></img>
             </div>
             <nav>
-                <NavLink to="/">Search</NavLink>
+                <NavLink to="/">Home</NavLink>
                 <NavLink to="/properties">Properties</NavLink>
-                <a href="/about">About Us</a>
-                <a href="/contact">Contact</a>
+                <NavLink to="/about">About Us</NavLink>
+                <NavLink to="/contact">Contact</NavLink>
             </nav>
         </div>
         <div className="border-container">
