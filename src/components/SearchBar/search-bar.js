@@ -8,14 +8,33 @@ import SearchButton from "../Buttons/search-button.js";
 
 function SearchBar({ withButton, searchBarStyle, searchFieldStyle }) {
 
+  const locationOptions = {
+    "All Locations": "All Locations",
+    "Gatlinburg, TN": "Gatlinburg, TN",
+    "Fort Walton Beach, FL": "Fort Walton Beach, FL"
+  }
+
+  const guestOptions = {
+    1: "1 Guest",
+    2: "2 Guest",
+    3: "3 Guest",
+    4: "4 Guest",
+    5: "5 Guest",
+    6: "6 Guest",
+    7: "7 Guest",
+    8: "8 Guest"
+  }
+
   if (withButton) {
     return (
       <div className={`search-bar ${searchBarStyle}`}>
-        <InputFieldSelect />
+        <InputFieldSelect 
+          name="location"
+          selectOptions={locationOptions}/>
         <TableDatePicker />
-        {/* <InputFieldDate fieldText="Check-In"/>
-        <InputFieldDate fieldText="Check-Out"/> */}
-        <InputFieldSelect />
+        <InputFieldSelect 
+          name="guests"
+          selectOptions={guestOptions}/>
         <SearchButton buttonLabel="Search"/>
       </div>
     );
@@ -23,8 +42,7 @@ function SearchBar({ withButton, searchBarStyle, searchFieldStyle }) {
     return (
       <div className={`search-bar ${searchBarStyle}`}>
         <InputFieldSelect />
-        <InputFieldDate fieldText="Check-In"/>
-        <InputFieldDate fieldText="Check-Out"/>
+        <TableDatePicker />
         <InputFieldSelect />
       </div>
     );
