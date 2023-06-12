@@ -12,7 +12,7 @@ function Contact() {
 
               <div className="form-container">
 
-                <h1>Let's get in touch! Test</h1>
+                <h1>Let's get in touch!</h1>
 
                 <div className="contact-input-container">
 
