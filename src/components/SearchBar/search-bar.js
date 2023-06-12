@@ -33,10 +33,8 @@ function SearchBar({ withButton, searchBarStyle, searchFieldStyle }) {
   const guestSelect = document.getElementById("guests");
   for (let key in guestSelect) {
     let option = document.createElement("option");
-    option.setAttribute('value', guestOptions[key]);
-
-    let optionText = document.createTextNode(key);
-    option.appendChild(optionText);
+    option.value = key;
+    option.text = guestOptions[key];
 
     guestSelect.appendChild(option);
   }
