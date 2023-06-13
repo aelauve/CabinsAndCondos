@@ -1,5 +1,4 @@
 import React from 'react'
-import Header from "../components/Header/header.js";
 import "../styles/Properties.css"
 
 import PropertyCard from "../components/Properties/PropertyCard/property-card.js"
@@ -15,7 +14,6 @@ function Properties() {
   return (
     <>
         <main>
-            <Header />
             <section className="main-content">
                 <PropertyFilter />
                 <LocationTitle location="Destin, FL" />
