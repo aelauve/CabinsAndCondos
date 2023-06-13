@@ -3,7 +3,7 @@ import Header from "../components/Header/header.js";
 import "../styles/Properties.css"
 
 import PropertyCard from "../components/Properties/PropertyCard/property-card.js"
-import PropertyFilter from '../components/Properties/PropertyCard/property-filter.js';
+import PropertyFilter from '../components/Properties/PropertyFilter/property-filter.js';
 import LocationTitle from '../components/Properties/location-title.js';
 
 import westPelican from "../images/beach4.jpeg";
