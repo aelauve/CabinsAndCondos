@@ -7,38 +7,6 @@ import SearchButton from "../Buttons/search-button.js";
 
 function SearchBar({ withButton, searchBarStyle, searchFieldStyle }) {
 
-  const locationOptions = {
-    "All Locations": "All Locations",
-    "Gatlinburg, TN": "Gatlinburg, TN",
-    "Fort Walton Beach, FL": "Fort Walton Beach, FL"
-  }
-
-  const locationSelect = document.getElementById("location");
-  for (let i = 0; i < locationOptions.length; i++) {
-    let index = locationOptions[i];
-    locationSelect.options[locationSelect.options.length] = new Option(locationOptions[index], index);
-  }
-
-  const guestOptions = {
-    1: "1 Guest",
-    2: "2 Guest",
-    3: "3 Guest",
-    4: "4 Guest",
-    5: "5 Guest",
-    6: "6 Guest",
-    7: "7 Guest",
-    8: "8 Guest"
-  }
-
-  const guestSelect = document.getElementById("guests");
-  for (let key in guestOptions) {
-    let option = document.createElement("option");
-    option.value = key;
-    option.text = guestOptions[key];
-
-    guestSelect.appendChild(option);
-  }
-
   if (withButton) {
     return (
       <div className={`search-bar ${searchBarStyle}`}>
