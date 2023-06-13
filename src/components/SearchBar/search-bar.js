@@ -11,12 +11,10 @@ function SearchBar({ withButton, searchBarStyle, searchFieldStyle }) {
     return (
       <div className={`search-bar ${searchBarStyle}`}>
         <InputFieldSelect 
-          name="location"
-          selectOptions={locationOptions}/>
+          name="location" />
         <TableDatePicker />
         <InputFieldSelect 
-          name="guests"
-          selectOptions={guestOptions}/>
+          name="guests"/>
         <SearchButton buttonLabel="Search"/>
       </div>
     );
