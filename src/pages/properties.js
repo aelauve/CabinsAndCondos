@@ -2,7 +2,7 @@ import React from 'react'
 import Header from "../components/Header/header.js";
 import "../styles/Properties.css"
 
-import PropertyCard from '../components/PropertyCard/property-card.js';
+import PropertyCard from "../components/Properties/PropertyCard/property-card.js"
 import PropertyFilter from '../components/PropertyCard/property-filter.js';
 import LocationTitle from '../components/Properties/location-title.js';
 
